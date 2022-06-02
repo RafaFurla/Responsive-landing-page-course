@@ -1,0 +1,192 @@
+:root {
+    --color1:#FFFFFF;
+    --color2:#284b63;
+    --color3:#000000;
+    --color4:#549DA0;
+    --color5:#353535;
+    --color6:#868686;
+    --color7:#468486;
+    --color8:#c3c3c3;
+}
+
+* {
+    margin:0px;
+    padding:0px;
+}
+
+
+header {
+    color: var(--color1);
+    background-color: var(--color2);
+    padding: 80px 0;
+    text-align: center;
+}
+
+section {
+    padding: 40px 0px;
+    text-align: center;
+}
+
+.features {
+    background: var(--color1);
+    color: var(--color3);
+}
+
+.quote {
+    background:var(--color4);
+    color:var(--color1);
+}
+
+footer {
+    background: var(--color5);
+    padding: 32px 0;
+    text-align: center;
+    color: var(--color6);
+    font-size: 12px;
+}
+
+footer ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+footer li {
+    display: inline-block;
+}
+
+footer li a {
+    padding: 6px;
+    font-size: 14px;
+    text-decoration: none;
+    color: var(--color8);
+}
+
+footer li a:hover {
+    color: white;
+}
+
+h1 {
+    font-size: 48px;
+    margin:0 0 16px 0;
+}
+
+h2 {
+    font-weight: 300;
+    font-size: 24px;
+    margin: 0 0 16px 0;
+}
+
+.container {
+    margin: 0 auto;
+    padding: 0 20px 0 20px;
+    max-width: 900px;
+}
+
+.btn {
+    display: inline-block; /* We have set it to inline-block, so that the link behaves as an inline block container. */
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+    text-decoration: none;
+    background-color: var(--color4);
+    border: none;
+    border-radius: 5px;
+    padding: 12px 16px;
+    cursor: pointer;
+}
+
+.btn:hover {
+    background-color: var(--color7);
+}
+
+.feature {
+    width: 32%;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.feature img {
+    width: 40%;
+}
+
+blockquote {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+blockquote p {
+    margin: 0 0 5px 0;
+    font-size: 24px;
+}
+
+blockquote cite {
+    font-size: 16px;
+    font-style: italic;
+}
+
+blockquote cite:before {
+    content: '-';
+    margin-right: 5px;
+}
+
+/* Mobile Devices */
+
+@media screen and (max-width:480px) {
+    .btn {
+        display:block;
+        font-size: 18px;
+        margin: 0 10px
+    }
+
+    h1 {
+        font-size: 32px;
+        margin: 0 0 8px 0;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    section {
+        padding: 25px 0 15px 0;
+    }
+
+    .feature {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        margin: 0 0 10px 0;
+        font-size: 16px;
+    }
+
+    .feature img {
+        width: 15%;
+        min-width: 60px;
+        margin-right: 20px;
+    }
+
+    .quote {
+        padding: 30px 0;
+    }
+
+    blockquote p {
+        font-size: 18px;
+    }
+
+    blockquote cite {
+        font-size: 14px;
+    }
+
+    footer {
+        padding: 30px 0 10px 0;
+    }
+
+    footer li {
+        display: block;
+        margin: 5px 0;
+    }
+}
